@@ -13,7 +13,7 @@ Dans ce cas précis, l'application web vérifie si la requête provient de la pa
 ## Commande utilisée
 
 ```
-curl -s -A "ft_bornToSec" -e "https://www.nsa.gov/" http://localhost:8080/?page=whatever
+curl -H "Referer:https://www.nsa.gov/" -H "User-Agent:ft_bornToSec" http://localhost:8080/\?page\=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f | grep "flag"
 ```
 
 Cette commande envoie une requête avec les en-têtes User-Agent et Referer modifiés.

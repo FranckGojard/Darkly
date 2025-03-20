@@ -32,19 +32,6 @@ Pour corriger cette vulnérabilité, appliquez les bonnes pratiques suivantes :
 - **Utiliser des jetons sécurisés** : Remplacez l'identification par e-mail par un jeton unique envoyé par e-mail à l'utilisateur.
 - **Implémenter un contrôle d'authentification** : Exiger une authentification préalable avant d'afficher un formulaire de récupération de mot de passe.
 
-## Exemple de Code Sécurisé
-```python
-from flask import request, jsonify
-
-def recover_password():
-    email = request.form.get('mail')
-    if not email or not is_valid_user(email):
-        return jsonify({"error": "Accès refusé"}), 403
-    
-    send_reset_email(email)
-    return jsonify({"message": "Un e-mail de réinitialisation a été envoyé"})
-```
-
 ## Conclusion
 Cette vulnérabilité démontre les risques liés à une validation insuffisante des entrées utilisateur. En mettant en place des contrôles stricts côté serveur et en évitant d'exposer des données sensibles dans des champs cachés, vous pouvez sécuriser efficacement votre application contre ce type d'attaque.
 
