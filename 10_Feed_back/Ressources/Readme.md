@@ -10,7 +10,7 @@ Cette faille permet à un attaquant d’injecter du code malveillant directement
 Pour exploiter cette faille, il suffit de renseigner des caractères ou des balises spécifiques dans le formulaire. Voici un exemple avec une balise non filtrée :
 
 ```
-<scripT>
+<script
 ```
 
 Cette balise contourne la validation car la casse n’est pas vérifiée, permettant ainsi de passer le filtrage basique. Le serveur interprète alors cette balise comme un script valide, menant potentiellement à une exécution de code.
