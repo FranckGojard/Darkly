@@ -2,6 +2,8 @@
 
 ## Nom de la Faille
 Faille XSS basée sur les attributs (non persistante)
+## OWASP
+**A03:2021 – Injection**
 
 ## Description
 Cette faille permet à un attaquant d’injecter du code malveillant directement dans un formulaire de feedback en utilisant des balises ou caractères spéciaux pour contourner la validation côté client. 

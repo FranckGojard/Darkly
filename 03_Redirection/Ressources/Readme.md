@@ -2,6 +2,8 @@
 
 ## Nom de la Faille
 **Injection de Paramètre dans une Redirection**
+## OWASP
+**A01:2021 – Contrôles d'accès défaillants**
 
 ## Description
 Cette faille permet à un attaquant de manipuler le paramètre `site` dans l'URL pour accéder à des ressources non autorisées ou révéler des informations sensibles, comme un flag. Lorsque la valeur du paramètre `site` ne correspond à aucune redirection valide, le site retourne le flag au lieu de gérer proprement l'erreur.

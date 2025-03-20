@@ -3,6 +3,10 @@
 ## Nom de la Faille
 
 **Inclusion de Fichier Local (LFI)**
+## OWASP
+**A01:2021 – Contrôles d'accès défaillants**
+**CWE-35 Path Traversal: '.../...//'**
+**A10:2021 – A10 Falsification de requête côté serveur (SSRF)**
 
 ## Description
 

@@ -2,6 +2,8 @@
 
 ## Nom de la Faille
 **Faible Contrôle des Champs Cachés dans le Formulaire de Récupération de Mot de Passe**
+## OWASP
+**A07:2021 – Identification et authentification de mauvaise qualité**
 
 ## Description
 Cette faille permet à un attaquant de manipuler le formulaire de récupération de mot de passe en modifiant ou supprimant un champ `hidden` contenant une adresse e-mail pré-remplie. En supprimant ce champ et en soumettant le formulaire, l'attaquant obtient directement un accès à des informations sensibles, comme un flag.

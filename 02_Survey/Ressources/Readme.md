@@ -2,6 +2,8 @@
 
 ## Nom de la Faille
 **Manipulation de Valeur dans un Formulaire**
+## OWASP
+**A01:2021 – Contrôles d'accès défaillants**
 
 ## Description
 Cette faille permet à un attaquant de manipuler la valeur soumise via le formulaire de la page `survey`. Le formulaire contient un menu déroulant (`<select>`) avec des options allant de 1 à 10. En modifiant la valeur d'une option pour une valeur supérieure à 10 (par exemple, 11), l'attaquant peut déclencher une réponse inattendue du serveur, comme l'affichage d'un flag.

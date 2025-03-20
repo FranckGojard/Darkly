@@ -3,7 +3,8 @@
 ## Nom de la Faille
 
 Manipulation des en-têtes HTTP : User-Agent et Referer
-
+## OWASP
+**A01:2021 – Contrôles d'accès défaillants**
 ## Description
 
 Cette faille permet à un attaquant de contourner les vérifications côté serveur en manipulant les en-têtes HTTP, notamment le champ "User-Agent" pour simuler un navigateur spécifique et le champ "Referer" pour indiquer l'origine de la requête.

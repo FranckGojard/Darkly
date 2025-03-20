@@ -2,6 +2,8 @@
 
 ## Nom de la Faille
 **Manipulation de Cookie pour Élévation de Privilèges**
+## OWASP
+**A01:2021 – Contrôles d'accès défaillants**
 
 ## Description
 Cette faille permet à un attaquant de modifier la valeur du cookie `I_am_admin` pour obtenir des privilèges administratifs. Par défaut, le cookie est défini avec la valeur `false` (hashée en MD5). En modifiant cette valeur pour `true` (hashée en MD5), l'attaquant peut accéder à des fonctionnalités ou des informations sensibles, comme un flag.

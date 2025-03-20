@@ -4,6 +4,10 @@
 
 **XSS via le paramètre ********`src`******** sur la page media**
 
+## OWASP
+**A03:2021 – Injection**
+
+
 ## Description
 
 Cette faille permet l'exécution de code JavaScript malveillant via le paramètre `src` sur la page `media`. En injectant un payload encodé en Base64, un attaquant peut exécuter du JavaScript dans le navigateur de la victime, ce qui peut mener à du vol de cookies, du détournement de session ou d'autres attaques XSS.

