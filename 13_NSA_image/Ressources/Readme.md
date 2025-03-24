@@ -2,7 +2,7 @@
 
 ## Nom de la Faille
 
-**XSS via le paramètre ********`src`******** sur la page media**
+**XSS via le paramètre *`src`* sur la page media**
 
 ## OWASP
 **A03:2021 – Injection**

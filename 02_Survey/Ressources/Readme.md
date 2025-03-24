@@ -33,22 +33,6 @@ Pour corriger cette vulnérabilité, suivez les étapes suivantes :
 - **Gestion des erreurs** : Redirigez vers une page d'erreur ou affichez un message approprié si une valeur non valide est soumise.
 - **Journalisation** : Journalisez les tentatives de soumission de valeurs non valides pour détecter les activités suspectes.
 
-## Exemple de Code Sécurisé
-```php
-<?php
-$allowed_values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-$submitted_value = (int)$_POST['valeur'];
-
-if (in_array($submitted_value, $allowed_values)) {
-    // Traitement du vote
-} else {
-    // Rediriger vers une page d'erreur ou afficher un message
-    header('Location: /error.php');
-    exit();
-}
-?>
-```
-
 ## Conclusion
 Cette vulnérabilité met en évidence l'importance de valider les données côté serveur et de ne pas faire confiance aux données côté client. En implémentant les corrections ci-dessus, vous pouvez sécuriser votre application contre ce type de manipulation.
 

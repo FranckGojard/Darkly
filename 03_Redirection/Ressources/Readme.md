@@ -33,27 +33,5 @@ Pour corriger cette vulnérabilité, suivez les étapes suivantes :
 - **Gestion des Erreurs** : Redirigez vers une page d'erreur générique si la valeur du paramètre `site` n'est pas valide.
 - **Journalisation** : Journalisez les tentatives d'accès à des redirections non valides pour détecter les activités suspectes.
 
-## Exemple de Code Sécurisé
-```php
-<?php
-$allowed_sites = [
-    'facebook' => 'https://www.facebook.com',
-    'twitter'  => 'https://www.twitter.com',
-    // Ajoutez d'autres sites autorisés ici
-];
-
-$site = $_GET['site'];
-
-if (array_key_exists($site, $allowed_sites)) {
-    header('Location: ' . $allowed_sites[$site]);
-    exit();
-} else {
-    // Redirigez vers une page d'erreur générique
-    header('Location: /error.php');
-    exit();
-}
-?>
-```
-
 ## Conclusion
 Cette vulnérabilité met en évidence l'importance de valider les entrées utilisateur et de bien gérer les erreurs. En implémentant les corrections ci-dessus, vous pouvez sécuriser votre application contre ce type de faille.

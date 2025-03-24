@@ -31,22 +31,6 @@ Pour corriger cette vulnérabilité, suivez les étapes suivantes :
 - **Utiliser des tokens sécurisés** : Si des cookies sont nécessaires, utilisez des tokens signés et chiffrés pour empêcher toute manipulation.
 - **Hachage sécurisé** : Si vous devez stocker des valeurs dans des cookies, utilisez des algorithmes de hachage sécurisés et salés (comme bcrypt ou Argon2).
 
-## Exemple de Code Sécurisé
-```php
-<?php
-// Vérification côté serveur
-session_start();
-
-if ($_SESSION['is_admin'] === true) {
-    // Accès autorisé
-} else {
-    // Rediriger vers une page d'erreur ou refuser l'accès
-    header('Location: /access_denied.php');
-    exit();
-}
-?>
-```
-
 ## Conclusion
 Cette vulnérabilité démontre les dangers de la confiance excessive envers les données côté client, comme les cookies. En implémentant des vérifications côté serveur et en utilisant des méthodes sécurisées pour gérer les privilèges, vous pouvez protéger votre application contre ce type d'attaque.
 
